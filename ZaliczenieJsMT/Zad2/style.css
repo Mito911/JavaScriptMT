@@ -1,0 +1,88 @@
+/* Stylizacja ciała strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Stylizacja slidera */
+#slider {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylizacja kontenera slajdów */
+#slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Stylizacja każdego slajdu */
+.slide {
+    min-width: 100%; /* Każdy slajd zajmuje 100% szerokości kontenera */
+    height: auto;
+    border-radius: 10px;
+    display: none; /* Ukryj wszystkie slajdy domyślnie */
+}
+
+/* Slajd z klasą 'active' jest widoczny */
+.slide.active {
+    display: block;
+}
+
+/* Stylizacja przycisków nawigacyjnych */
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#prev:hover, #next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Stylizacja wskaźników (kropek) */
+#wskaznik {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Stylizacja dla pojedynczej kropki */
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+

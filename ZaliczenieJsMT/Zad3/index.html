@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button data-sound="./sounds/boom.wav" id="1" data-key="a">A</button>
+    <button data-sound="./sounds/kick.wav" id="2" data-key="s">S</button>
+    <button data-sound="./sounds/hihat.wav" id="3" data-key="d">D</button>
+
+    <div id="controls">
+        <div class="channel">
+            <button class="record" data-channel="1">Nagrywaj Kanał 1</button>
+            <button class="play" data-channel="1">Odtwórz Kanał 1</button>
+        </div>
+        <div class="channel">
+            <button class="record" data-channel="2">Nagrywaj Kanał 2</button>
+            <button class="play" data-channel="2">Odtwórz Kanał 2</button>
+        </div>
+        <div class="channel">
+            <button class="record" data-channel="3">Nagrywaj Kanał 3</button>
+            <button class="play" data-channel="3">Odtwórz Kanał 3</button>
+        </div>
+        <div class="channel">
+            <button class="record" data-channel="4">Nagrywaj Kanał 4</button>
+            <button class="play" data-channel="4">Odtwórz Kanał 4</button>
+        </div>
+        <button id="play-all">Odtwórz Wszystkie Kanały</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulki z liniami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Symulacja</h1>
+
+    <div class="controls">
+        <label for="ballCount">Liczba kulek (X):</label>
+        <input type="range" id="ballCount" min="10" max="200" value="50">
+        <span id="ballCountValue">50</span>
+
+        <label for="distanceThreshold">Odległość (Y):</label>
+        <input type="range" id="distanceThreshold" min="10" max="200" value="100">
+        <span id="distanceThresholdValue">100</span>
+        
+        <button id="startButton">Start</button>
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
